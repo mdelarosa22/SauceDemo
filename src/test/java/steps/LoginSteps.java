@@ -43,4 +43,20 @@ public class LoginSteps {
         Assert.assertEquals(requiredPasswordValidation, login.errorValidation());
     }
 
+    @When("I add a invalid {word}")
+    public void IAddIncorrectUsername(String username){
+        login.sendUserName(username);
+    }
+
+    @Then("I should see incorrect credentials validation")
+    public void IShouldSeeIncorrectCredentialsValidation(){
+        String incorrectUsernameValidation = "Epic sadface: Username and password do not match any user in this service";
+        Assert.assertEquals(incorrectUsernameValidation, login.errorValidation());
+    }
+
+    @When("I add an incorrect {word}")
+    public void IAddAnIncorrectPassword(String password){
+        login.sendPassword(password);
+    }
+
 }
