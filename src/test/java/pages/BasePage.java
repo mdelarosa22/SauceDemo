@@ -60,4 +60,8 @@ public class BasePage {
     public String getTextLocator(String locator){
         return Find(locator).getText();
     }
+
+    public boolean isDisplayed(String locator){
+        return Find(locator).isDisplayed();
+    }
 }

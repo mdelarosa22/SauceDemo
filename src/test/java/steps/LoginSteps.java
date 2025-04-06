@@ -6,10 +6,12 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import pages.HomePage;
 import pages.LoginPage;
 
 public class LoginSteps {
     LoginPage login = new LoginPage();
+    HomePage home = new HomePage();
 
     @Given("I go to saucedemo page")
     public void IGoToSauceDemoPage(){
@@ -57,6 +59,11 @@ public class LoginSteps {
     @When("I add an incorrect {word}")
     public void IAddAnIncorrectPassword(String password){
         login.sendPassword(password);
+    }
+
+    @Then("I should see homepage correctly")
+    public void IShouldSeeHomePage(){
+        System.out.println(home.isDisplayedLabelProducts());
     }
 
 }
