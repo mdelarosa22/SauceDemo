@@ -3,9 +3,11 @@ Feature: Login to SauceDemo page
 
     Go to saucedemo and test successfull and unsuccessfull Login
 
+    Background: Navigate to saucedemo page
+        Given  I go to saucedemo page
+
 
     Scenario Outline: Empty username and correct password
-        Given  I go to saucedemo page
         When I add a correct <password>
         And I click on login button
         Then I should see empty username field validation
@@ -16,7 +18,6 @@ Feature: Login to SauceDemo page
 
 
     Scenario Outline: Correct username and empty password
-        Given  I go to saucedemo page
         When I add a valid <username>
         And I click on login button
         Then I should see empty password field validation
@@ -27,7 +28,6 @@ Feature: Login to SauceDemo page
 
 
     Scenario Outline: Invalid username and correct password
-        Given  I go to saucedemo page
         When I add a invalid <username>
         When I add a correct <password>
         And I click on login button
@@ -39,7 +39,6 @@ Feature: Login to SauceDemo page
 
 
     Scenario Outline: Valid username and incorrect password
-        Given  I go to saucedemo page
         When I add a valid <username>
         When I add an incorrect <password>
         And I click on login button
@@ -51,7 +50,6 @@ Feature: Login to SauceDemo page
 
 
     Scenario Outline: Valid credencials successfull login
-        Given  I go to saucedemo page
         When I add a valid <username>
         When I add a correct <password>
         And I click on login button
@@ -63,7 +61,6 @@ Feature: Login to SauceDemo page
 
 
     Scenario Outline: Valid credencials but locked user
-        Given  I go to saucedemo page
         When I add a valid <username>
         When I add a correct <password>
         And I click on login button
