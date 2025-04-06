@@ -60,3 +60,15 @@ Feature: Login to SauceDemo page
         Examples:
             |username       |   password        |
             |standard_user  |   secret_sauce    |
+
+
+    Scenario Outline: Valid credencials but locked user
+        Given  I go to saucedemo page
+        When I add a valid <username>
+        When I add a correct <password>
+        And I click on login button
+        Then I should see locked user validation
+
+        Examples:
+            |username         |   password        |
+            |locked_out_user  |   secret_sauce    |

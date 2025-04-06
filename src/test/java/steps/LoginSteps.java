@@ -66,4 +66,10 @@ public class LoginSteps {
         System.out.println(home.isDisplayedLabelProducts());
     }
 
+    @Then("I should see locked user validation")
+    public void IShouldSeeLockedValidation(){
+        String lockedUserValidation = "Epic sadface: Sorry, this user has been locked out.";
+        Assert.assertEquals(lockedUserValidation, login.errorValidation());
+    }
+
 }
