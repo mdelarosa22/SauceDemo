@@ -1,11 +1,16 @@
 package pages;
 
 import java.time.Duration;
+import java.util.Arrays;
+import java.util.List;
 
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
+import org.openqa.selenium.NoAlertPresentException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -64,4 +69,16 @@ public class BasePage {
     public boolean isDisplayed(String locator){
         return Find(locator).isDisplayed();
     }
+
+    public int getDropdownSize(String locator){
+        Select dropdown = new Select(Find(locator));
+        List <WebElement> dropdownOptions = dropdown.getOptions();
+        return dropdownOptions.size();
+    }
+
+    public int getSize(String locator){
+        List <WebElement> dropdownOptions = driver.findElements(By.xpath(locator));
+        return dropdownOptions.size();
+    }
+
 }

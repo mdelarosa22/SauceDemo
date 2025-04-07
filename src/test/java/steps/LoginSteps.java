@@ -63,7 +63,7 @@ public class LoginSteps {
 
     @Then("I should see homepage correctly")
     public void IShouldSeeHomePage(){
-        System.out.println(home.isDisplayedLabelProducts());
+        Assert.assertTrue(home.isDisplayedLabelProducts());
     }
 
     @Then("I should see locked user validation")
