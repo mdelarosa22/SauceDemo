@@ -1,7 +1,7 @@
 @Navigation
 Feature: Test home page functionalities
 
-    Scenario Outline: Verify the count of products displayed
+    Scenario Outline: Verify the correct amount of products displayed
         Given I go to saucedemo page
         When I add a valid <username>
         When I add a correct <password>
