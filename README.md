@@ -15,7 +15,7 @@
 
 ## Documentation
 - This project was build in **Page Object Model** design pattern that means that there is a BasePage that includes all the **Selenium Webdriver** code, that way we can give easily maintenance to the project. 
-- Each class included in pages package are a subclass of BasePage (extends BasePage) and includes the locators and the functions that these the page needs. Examples of classes: LoginPage, HomePage.
+- Each class included in pages package are a subclass of **BasePage** (extends BasePage) and includes the locators and the functions that these the page needs. Examples of classes: LoginPage, HomePage.
 - The building tool used was **Gradle**, and all dependencies are in build.gradle file.
 Resources package includes the **Cucumber** feature files, that explain every step that the test case are executing in gherkin format and can be easily understanded. Here is an example:
     
