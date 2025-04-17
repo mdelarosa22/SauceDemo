@@ -1,4 +1,4 @@
-## Automation project 
+## Automation project created with Selenium WebDriver, Java, Cucumber, TestNG, Gradle
 ### Pre requisites
 - To run this project the first step is install [java jdk 21](https://www.oracle.com/java/technologies/downloads/#java21) and configure the environment variables (JAVA_HOME).
 - The next steps is install gradle from [gradle page](https://gradle.org/install/)
