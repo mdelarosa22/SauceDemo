@@ -19,11 +19,11 @@
 - The building tool used was **Gradle**, and all dependencies are in build.gradle file.
 Resources package includes the **Cucumber** feature files, that explain every step that the test case are executing in gherkin format and can be easily understanded. Here is an example:
     
-    Scenario Outline: Empty username and correct password
-            When I add a correct <password>
-            And I click on login button
-            Then I should see empty username field validation
+             Scenario Outline: Empty username and correct password
+                When I add a correct <password>
+                And I click on login button
+                Then I should see empty username field validation
 
-            Examples:
-                |username       |   password     |
-                |standard_user  |  secret_sauce  |
+                Examples:
+                    |username       |   password     |
+                    |standard_user  |  secret_sauce  |
