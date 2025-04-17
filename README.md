@@ -8,6 +8,7 @@
 *Once you have installed java and gradle you can clone the project with the following command and the project github url 
 ```
     git clone
+```
 
 ###Run project
 Project can be execute from the runner file located in 'src/test/java/runner/TestRunner.java' by clicking on 'Click to run tests' (green arrow in public class TestRunner)
