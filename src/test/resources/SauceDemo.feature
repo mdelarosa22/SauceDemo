@@ -49,17 +49,6 @@ Feature: Login to SauceDemo page
             |standard_user  |   pass        |
 
 
-    Scenario Outline: Valid credencials successfull login
-        When I add a valid <username>
-        When I add a correct <password>
-        And I click on login button
-        Then I should see homepage correctly
-
-        Examples:
-            |username       |   password        |
-            |standard_user  |   secret_sauce    |
-
-
     Scenario Outline: Valid credencials but locked user
         When I add a valid <username>
         When I add a correct <password>
@@ -69,3 +58,14 @@ Feature: Login to SauceDemo page
         Examples:
             |username         |   password        |
             |locked_out_user  |   secret_sauce    |
+            
+
+    Scenario Outline: Valid credencials successfull login
+        When I add a valid <username>
+        When I add a correct <password>
+        And I click on login button
+        Then I should see homepage correctly
+
+        Examples:
+            |username       |   password        |
+            |standard_user  |   secret_sauce    |
