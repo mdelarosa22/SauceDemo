@@ -1,8 +1,8 @@
 ## Automation project 
 ### Pre requisites
--To run this project the first step is install [java jdk 21](https://www.oracle.com/java/technologies/downloads/#java21) and configure the environment variables (JAVA_HOME).-
--The next steps is install gradle from [gradle page](https://gradle.org/install/)-
--Install [git bash](https://git-scm.com/downloads)-
+- To run this project the first step is install [java jdk 21](https://www.oracle.com/java/technologies/downloads/#java21) and configure the environment variables (JAVA_HOME).
+- The next steps is install gradle from [gradle page](https://gradle.org/install/)
+- Install [git bash](https://git-scm.com/downloads)
 
 ###Installing the project### 
 -Once you have installed java and gradle you can clone the project with the following command and the project github url 
