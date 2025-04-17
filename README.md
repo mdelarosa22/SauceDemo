@@ -27,3 +27,8 @@ Resources package includes the **Cucumber** feature files, that explain every st
                 Examples:
                     |username       |   password     |
                     |standard_user  |  secret_sauce  |
+
+
+- This demo includes different posible scenarios that can be applied to SauceDemo LoginPage.
+
+- If you want to execute Home.feature test case please comment **@Navigation** tag in SauceDemo.feature and uncomment that line in Home.feature file.
