@@ -1,4 +1,4 @@
-## Automation project created with Selenium WebDriver, Java, Cucumber, TestNG, Gradle
+## Automation project created with Selenium WebDriver, Java, Cucumber, TestNG, Gradle in Visual Studio Code
 ### This project includes test cases to test different positive and negative scenarios in a login page
 ### Pre requisites
 - To run this project the first step is install [java jdk 21](https://www.oracle.com/java/technologies/downloads/#java21) and configure the environment variables (JAVA_HOME).
