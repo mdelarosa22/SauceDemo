@@ -13,7 +13,7 @@ public class LoginSteps {
     LoginPage login = new LoginPage();
     HomePage home = new HomePage();
 
-    @Given("I go to saucedemo page")
+    @Given("^I go to saucedemo page$")
     public void IGoToSauceDemoPage(){
         login.goToSauceDemoPage("https://www.saucedemo.com/v1/");
     }
@@ -23,12 +23,12 @@ public class LoginSteps {
         login.sendPassword(password);
     }
     
-    @And("I click on login button")
+    @And("^I click on login button$")
     public void IClickOnLoginButton(){
         login.clickLoginButton();
     }
 
-    @Then("I should see empty username field validation")
+    @Then("^I should see empty username field validation$")
     public void IShouldSeeEmptyUsername(){
         String requiredUserValidation = "Epic sadface: Username is required";
         Assert.assertEquals(requiredUserValidation, login.errorValidation());
@@ -39,7 +39,7 @@ public class LoginSteps {
         login.sendUserName(username);
     }
 
-    @Then("I should see empty password field validation")
+    @Then("^I should see empty password field validation$")
     public void IShouldSeeEmptyPassword(){
         String requiredPasswordValidation = "Epic sadface: Password is required";
         Assert.assertEquals(requiredPasswordValidation, login.errorValidation());
@@ -50,7 +50,7 @@ public class LoginSteps {
         login.sendUserName(username);
     }
 
-    @Then("I should see incorrect credentials validation")
+    @Then("^I should see incorrect credentials validation$")
     public void IShouldSeeIncorrectCredentialsValidation(){
         String incorrectUsernameValidation = "Epic sadface: Username and password do not match any user in this service";
         Assert.assertEquals(incorrectUsernameValidation, login.errorValidation());
@@ -61,12 +61,12 @@ public class LoginSteps {
         login.sendPassword(password);
     }
 
-    @Then("I should see homepage correctly")
+    @Then("^I should see homepage correctly$")
     public void IShouldSeeHomePage(){
         Assert.assertTrue(home.isDisplayedLabelProducts());
     }
 
-    @Then("I should see locked user validation")
+    @Then("^I should see locked user validation$")
     public void IShouldSeeLockedValidation(){
         String lockedUserValidation = "Epic sadface: Sorry, this user has been locked out.";
         Assert.assertEquals(lockedUserValidation, login.errorValidation());

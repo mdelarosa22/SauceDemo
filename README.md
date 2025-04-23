@@ -32,4 +32,6 @@ Resources package includes the **Cucumber** feature files, that explain every st
 
 - This demo includes different posible scenarios that can be applied to SauceDemo LoginPage.
 
-- If you want to execute Home.feature test case please comment **@Navigation** tag in SauceDemo.feature and uncomment that line in Home.feature file.
+- If you want to execute Home.feature test case please comment **@Login** tag in SauceDemo.feature and uncomment that line in Home.feature file.
+
+- After run the project the results you can access to the report from Debug Console in terminal, a link shall be created an this could be opened in a browser.

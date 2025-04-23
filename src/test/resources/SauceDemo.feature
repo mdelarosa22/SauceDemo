@@ -1,4 +1,4 @@
-@Navigation
+@Login
 Feature: Login to SauceDemo page
 
     Go to saucedemo and test successfull and unsuccessfull Login

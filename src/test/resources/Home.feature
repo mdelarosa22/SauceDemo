@@ -1,4 +1,4 @@
-#@Navigation
+#@Login
 Feature: Test home page functionalities
 
     Scenario Outline: Verify the correct amount of products displayed
